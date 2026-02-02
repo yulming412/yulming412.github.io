@@ -3,59 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <title>반짝! 너에게 닿을 때</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
+      background: #f5f6f7;
       font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
-      background: #fff;
     }
 
     .container {
-      max-width: 720px;
+      max-width: 420px;
       margin: 0 auto;
-      padding: 20px;
+      background: #fff;
+      min-height: 100vh;
     }
 
-    h1 {
+    header {
+      padding: 16px;
+      border-bottom: 1px solid #eee;
       text-align: center;
-      font-size: 26px;
-      margin-bottom: 10px;
     }
 
-    .subtitle {
-      text-align: center;
-      color: #777;
-      margin-bottom: 30px;
+    header h1 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .episode-list {
+      padding: 8px 0;
     }
 
     .episode {
-      border-bottom: 1px solid #eee;
-      padding: 16px 0;
+      padding: 14px 16px;
+      border-bottom: 1px solid #f0f0f0;
     }
 
     .episode a {
       text-decoration: none;
       color: #111;
-      font-size: 18px;
       display: block;
     }
 
-    .episode a:hover {
-      color: #ff7aa2;
+    .episode-title {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .episode-sub {
+      font-size: 12px;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    .episode:hover {
+      background: #f8f8f8;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>반짝! 너에게 닿을 때</h1>
-    <div class="subtitle">청춘 · 로맨스</div>
 
-    <!-- 회차 목록 -->
-    <div class="episode">
-      <a href="episode1.html">1화 · 봄은 늘 갑자기</a>
+    <header>
+      <h1>반짝! 너에게 닿을 때</h1>
+    </header>
+
+    <div class="episode-list">
+
+      <div class="episode">
+        <a href="episode1.html">
+          <div class="episode-title">1화 · 봄은 늘 갑자기</div>
+          <div class="episode-sub">업데이트 · 2026.02.02</div>
+        </a>
+      </div>
+
     </div>
+
   </div>
 </body>
 </html>
