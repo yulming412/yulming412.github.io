@@ -2,42 +2,111 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>1화 · 봄은 늘 갑자기</title>
+  <title>반짝! 너에게 닿을 때</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
-      background: #000;
+      background: #f5f6f7;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
     }
 
-    .viewer {
+    .container {
       max-width: 420px;
       margin: 0 auto;
-      background: #000;
+      background: #fff;
+      min-height: 100vh;
     }
 
-    .viewer img {
-      width: 100%;
-      display: block;
-    }
-
-    .episode-title {
-      color: #fff;
+    header {
+      padding: 16px;
       text-align: center;
-      padding: 12px 0;
-      font-size: 14px;
+      border-bottom: 1px solid #eee;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .episode {
+      display: flex;
+      gap: 12px;
+      padding: 14px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .episode a {
+      display: flex;
+      gap: 12px;
+      text-decoration: none;
+      color: #111;
+      width: 100%;
+    }
+
+    .thumb {
+      width: 72px;
+      height: 72px;
+      background: #ddd;
+      border-radius: 6px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .title {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .new {
+      color: #00dc64;
+      font-size: 12px;
+      margin-left: 6px;
+    }
+
+    .date {
+      margin-top: 6px;
+      font-size: 12px;
+      color: #888;
     }
   </style>
 </head>
 
 <body>
-  <div class="viewer">
-    <div class="episode-title">1화 · 봄은 늘 갑자기</div>
+  <div class="container">
 
-    <img src="images/ep1_01.jpg">
-    <img src="images/ep1_02.jpg">
-    <img src="images/ep1_03.jpg">
+    <header>
+      <h1>반짝! 너에게 닿을 때</h1>
+    </header>
+
+    <!-- 1화 -->
+    <div class="episode">
+      <a href="episode1.html">
+        <div class="thumb">
+          <img src="images/ep1_thumb.jpg">
+        </div>
+        <div class="info">
+          <div class="title">
+            1화 · 봄은 늘 갑자기
+            <span class="new">NEW</span>
+          </div>
+          <div class="date">2026.02.02</div>
+        </div>
+      </a>
+    </div>
+
   </div>
 </body>
 </html>
